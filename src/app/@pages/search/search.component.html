@@ -1,0 +1,30 @@
+<ol class="breadcrumb text-muted categorias">
+    <span *ngFor="let breadcrumb of data.available_filters ">
+      <span *ngIf="breadcrumb.id == 'category'">
+          <li *ngFor="let bread of breadcrumb.values | slice:0:4">
+              {{ bread.name }}
+          </li>
+      </span>
+    </span>
+</ol>
+<div class="card mb-3" >
+    <span *ngFor="let item of data.results | slice:0:4">
+        <div class="row g-0">
+            <div class="col-sm-2" (click)="viewItem(item.id)">
+                <img [src]="item.thumbnail" class="product" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title text1"> {{item.price | currency: item.currency_id}} <img *ngIf="item.shipping.free_shipping" src="../../../assets/ic_shipping.png" alt=""></h5>
+                    <p class="card-text text2" (click)="viewItem(item.id)">{{item.title}},</p>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text3">{{item.address.state_name}}</h5>
+                </div>
+            </div>
+        </div>
+        <hr width="95%" class="mx-auto">
+    </span>
+</div>

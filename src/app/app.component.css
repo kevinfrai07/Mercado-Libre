@@ -1,0 +1,13 @@
+nav{
+    background-color: #ffe600;
+}
+
+.categorias{
+    margin-top: 16px;
+    margin-block-end: 16px;
+}
+
+.search{
+    cursor: pointer;
+}
+

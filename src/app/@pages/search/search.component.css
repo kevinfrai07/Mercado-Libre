@@ -1,0 +1,52 @@
+
+.product{
+    height: 180px;
+    width: 180px;
+    margin: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.categorias{
+    font-size: 14px;
+    margin-top: 16px;
+}
+.text1{
+    font-size: 24px;
+}
+.text2{
+    font-size: 18px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.text3{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.breadcrumb {
+    background: none;
+    font-size: 0.8em;
+    margin: 0;
+    margin-block-end: 16px;
+}
+.breadcrumb a, .breadcrumb span {
+    color: darkgrey;
+}
+.breadcrumb a:hover, .breadcrumb span:hover {
+    color: dimgrey;
+    text-decoration: none;
+}
+.breadcrumb li {
+    list-style: none;
+    float: left;
+    margin: 5px;
+}
+.breadcrumb li:last-child {
+    margin-right: 20px;
+}
+.breadcrumb li::after {
+    content: ">";
+    color: darkgrey;
+}
+.breadcrumb li:last-child::after {
+    content: "";
+}
