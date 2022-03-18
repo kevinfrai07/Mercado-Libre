@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Angular SEO – Angular Universal
+
+Angular Universal es una tecnología proporcionada por Angular para representar sus aplicaciones angulares en el servidor.
+Esta herramienta le permite al servidor renderizar previamente su aplicación Angular cuando el usuario visita su sitio web por primera vez. 
+Hay muchos beneficios de SEO al aprovechar Angular Universal. 
+También ayuda a mejorar el rendimiento general y la accesibilidad de su aplicación web Angular.
